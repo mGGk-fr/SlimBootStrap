@@ -1,0 +1,3 @@
+<?php
+//Sample file for route configuration
+$app->get('/',\App\Controllers\PagesController::class.":home")->setName("home");

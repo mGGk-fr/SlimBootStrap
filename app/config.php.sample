@@ -1,0 +1,6 @@
+<?php
+// Rename me in config.php and configure your Database access here
+$dbBase = "";
+$dbAddress = "";
+$dbUser = "";
+$dbPass = "";
