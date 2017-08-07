@@ -21,13 +21,8 @@ $container['view'] = function ($container) {
 //Defining DB access
 $container['pdo'] = function($db){
     //loading setting
-    require '../app/config.inc.php';
+    require '../app/config.php';
     $pdo = new PDO("mysql:dbname=".$dbBase.";host:".$dbAddress, $dbUser, $dbPass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     return $pdo;
-};
-
-$container['trackerURL'] = function(){
-    require'../app/config.inc.php';
-    return $trackerBaseURL;
 };
